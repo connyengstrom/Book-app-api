@@ -59,3 +59,5 @@ jobs:
           app-name: 'Book-app'
           slot-name: 'Production'
           package: ${{github.workspace}}/myapp
+
+- task: PublishBuildArtifacts@1
