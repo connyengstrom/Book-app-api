@@ -58,4 +58,4 @@ jobs:
         with:
           app-name: 'Book-app'
           slot-name: 'Production'
-          package: ${{github.workspace}}/Book-app-api
+          package: ${{github.workspace}}
