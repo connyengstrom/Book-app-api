@@ -60,4 +60,4 @@ jobs:
           slot-name: 'Production'
           package: ${{github.workspace}}/myapp
 
-- task: PublishBuildArtifacts@1
+      - task: PublishBuildArtifacts@1
