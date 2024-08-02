@@ -57,20 +57,20 @@ namespace BookQuotesApi.Migrations
                         new
                         {
                             Id = 1,
-                            Author = "Franklin D. Roosevelt",
-                            Text = "The only limit to our realization of tomorrow is our doubts of today."
+                            Author = "Pablo Picasso",
+                            Text = "Good artists copy. Great artists steal."
                         },
                         new
                         {
                             Id = 2,
-                            Author = "Martin Luther King Jr.",
-                            Text = "In the end, we will remember not the words of our enemies, but the silence of our friends."
+                            Author = "Albert Pike",
+                            Text = "What we have done for ourselves alone dies with us; what we have done for others and the world remains and is immortal."
                         },
                         new
                         {
                             Id = 3,
-                            Author = "Alan Kay",
-                            Text = "The best way to predict the future is to invent it."
+                            Author = "Marcus Aurelius",
+                            Text = "Our life is what our thoughts make it."
                         },
                         new
                         {

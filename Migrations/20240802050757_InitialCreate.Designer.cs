@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookQuotesApi.Migrations
 {
     [DbContext(typeof(BookQuotesContext))]
-    [Migration("20240731063524_SeedQuotes")]
-    partial class SeedQuotes
+    [Migration("20240802050757_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -60,20 +60,20 @@ namespace BookQuotesApi.Migrations
                         new
                         {
                             Id = 1,
-                            Author = "Franklin D. Roosevelt",
-                            Text = "The only limit to our realization of tomorrow is our doubts of today."
+                            Author = "Pablo Picasso",
+                            Text = "Good artists copy. Great artists steal."
                         },
                         new
                         {
                             Id = 2,
-                            Author = "Martin Luther King Jr.",
-                            Text = "In the end, we will remember not the words of our enemies, but the silence of our friends."
+                            Author = "Albert Pike",
+                            Text = "What we have done for ourselves alone dies with us; what we have done for others and the world remains and is immortal."
                         },
                         new
                         {
                             Id = 3,
-                            Author = "Alan Kay",
-                            Text = "The best way to predict the future is to invent it."
+                            Author = "Marcus Aurelius",
+                            Text = "Our life is what our thoughts make it."
                         },
                         new
                         {
@@ -84,8 +84,8 @@ namespace BookQuotesApi.Migrations
                         new
                         {
                             Id = 5,
-                            Author = "Steve Jobs",
-                            Text = "The only way to do great work is to love what you do."
+                            Author = "Agent Smith",
+                            Text = "I'd like to share a revelation that I've had during my time here. It came to me when I tried to classify your species and I realized that you're not actually mammals. Every mammal on this planet instinctively develops a natural equilibrium with the surrounding environment but you humans do not. You move to an area and you multiply and multiply until every natural resource is consumed and the only way you can survive is to spread to another area. There is another organism on this planet that follows the same pattern. Do you know what it is? A virus. Human beings are a disease, a cancer of this planet. You're a plague and we are the cure."
                         });
                 });
 
