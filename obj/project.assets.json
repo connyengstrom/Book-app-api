@@ -4559,11 +4559,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Web apps projects\\Book list app 2\\Book-app-api\\BookQuotesApi\\BookQuotesApi.csproj",
+      "projectUniqueName": "C:\\Web apps projects\\Book list app 2\\Book-app-api\\Book-app-api\\BookQuotesApi.csproj",
       "projectName": "BookQuotesApi",
-      "projectPath": "C:\\Web apps projects\\Book list app 2\\Book-app-api\\BookQuotesApi\\BookQuotesApi.csproj",
+      "projectPath": "C:\\Web apps projects\\Book list app 2\\Book-app-api\\Book-app-api\\BookQuotesApi.csproj",
       "packagesPath": "C:\\Users\\fragg\\.nuget\\packages\\",
-      "outputPath": "C:\\Web apps projects\\Book list app 2\\Book-app-api\\BookQuotesApi\\obj\\",
+      "outputPath": "C:\\Web apps projects\\Book list app 2\\Book-app-api\\Book-app-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fragg\\AppData\\Roaming\\NuGet\\NuGet.Config"

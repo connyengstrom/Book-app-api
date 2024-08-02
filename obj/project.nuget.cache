@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zKD/tSelc44=",
+  "dgSpecHash": "JqoSe6WmCvM=",
   "success": true,
-  "projectFilePath": "C:\\Web apps projects\\Book list app 2\\Book-app-api\\BookQuotesApi\\BookQuotesApi.csproj",
+  "projectFilePath": "C:\\Web apps projects\\Book list app 2\\Book-app-api\\Book-app-api\\BookQuotesApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fragg\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\fragg\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
