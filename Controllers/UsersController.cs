@@ -36,6 +36,27 @@ namespace BookQuotesApi.Controllers
             return Ok(new { Token = token });
         }
 
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] User user)
+        {
+            if (string.IsNullOrWhiteSpace(user.Username) || string.IsNullOrWhiteSpace(user.Password))
+            {
+                return BadRequest(new { message = "Username and password are required" });
+            }
+
+            if (await _context.Users.AnyAsync(u => u.Username == user.Username))
+            {
+                return BadRequest(new { message = "Username already exists" });
+            }
+
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+
+
         private string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();

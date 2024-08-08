@@ -14,7 +14,6 @@ namespace BookQuotesApi.Models
         {
             base.OnModelCreating(modelBuilder);
 
-            // Seed a default user
             modelBuilder.Entity<User>().HasData(
                 new User
                 {
@@ -24,7 +23,6 @@ namespace BookQuotesApi.Models
                 }
             );
 
-            // Seed default quotes
             modelBuilder.Entity<Quote>().HasData(
                 new Quote { Id = 1, Text = "Good artists copy. Great artists steal.", Author = "Pablo Picasso" },
                 new Quote { Id = 2, Text = "What we have done for ourselves alone dies with us; what we have done for others and the world remains and is immortal.", Author = "Albert Pike" },

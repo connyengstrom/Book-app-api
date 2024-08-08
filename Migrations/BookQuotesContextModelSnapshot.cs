@@ -24,15 +24,26 @@ namespace BookQuotesApi.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Author")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Genre")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("PublishedDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Books");
                 });
@@ -93,9 +104,11 @@ namespace BookQuotesApi.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Username")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -109,6 +122,22 @@ namespace BookQuotesApi.Migrations
                             Password = "password",
                             Username = "user"
                         });
+                });
+
+            modelBuilder.Entity("BookQuotesApi.Models.Book", b =>
+                {
+                    b.HasOne("BookQuotesApi.Models.User", "User")
+                        .WithMany("Books")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BookQuotesApi.Models.User", b =>
+                {
+                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }
